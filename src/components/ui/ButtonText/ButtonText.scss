@@ -1,0 +1,27 @@
+.button-text {
+  width: 12.5rem;
+  height: 2.6rem;
+  background-color: transparent;
+  border: 1px solid #d58c51;
+  font-size: 1rem;
+  &_theme {
+    &_transparent {
+      color: #d58c51;
+
+      &:hover {
+        border-color: #fff;
+        color: #fff;
+      }
+    }
+
+    &_orange {
+      background-color: #d58c51;
+      border-color: #d58c51;
+
+      &:hover {
+        border-color: #fff;
+        color: #fff;
+      }
+    }
+  }
+}

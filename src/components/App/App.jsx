@@ -1,13 +1,7 @@
-import "./style.scss";
-
-import { ButtonIcon } from "../ui/Button-icon";
+import "./App.scss";
 
 function App() {
-  return (
-    <div className="App">
-      <ButtonIcon onClick={() => alert("hello")} style="orange" icon={<>+</>} />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;
