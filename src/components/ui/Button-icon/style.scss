@@ -1,0 +1,29 @@
+.button-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  &_theme {
+    &_white {
+      border-color: #fff;
+      fill: #fff;
+
+      &:hover {
+        background-color: #d58c51;
+        border-color: #d58c51;
+      }
+    }
+
+    &_orange {
+      border-color: #d58c51;
+      fill: #d58c51;
+
+      &:hover {
+        border-color: #fff;
+        fill: #fff;
+      }
+    }
+  }
+}
