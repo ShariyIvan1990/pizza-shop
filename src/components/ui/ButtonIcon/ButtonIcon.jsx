@@ -2,7 +2,7 @@ import "./ButtonIcon.scss";
 
 import PropTypes from "prop-types";
 
-const ButtonIcon = ({ icon, theme, clickHandler, ...props }) => {
+const ButtonIcon = ({ icon, theme, ...props }) => {
   return (
     <button className={`button-icon button-icon_theme_${theme}`} {...props}>
       {icon}

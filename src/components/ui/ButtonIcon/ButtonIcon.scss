@@ -4,11 +4,15 @@
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &_theme {
     &_white {
       border-color: #fff;
       fill: #fff;
+      stroke: #fff;
 
       &:hover {
         background-color: #d58c51;

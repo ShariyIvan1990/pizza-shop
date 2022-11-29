@@ -1,3 +1,4 @@
+import { CardItem } from "../CardItem/CardItem";
 import "./App.scss";
 
 function App() {
