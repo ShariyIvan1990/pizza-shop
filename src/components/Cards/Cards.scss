@@ -1,0 +1,24 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #d58c51;
+  padding: 2rem 1.25rem 1rem;
+  &:hover {
+    color: #d58c51;
+  }
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: max-content 50px 1fr max-content;
+  grid-template-areas: "img img" "hed hed" "des des";
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
