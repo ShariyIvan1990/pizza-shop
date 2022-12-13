@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     id: "1",
     name: "Устрицы по рокфеллеровски",
@@ -73,5 +73,3 @@ const products = [
     img: "2.png",
   },
 ];
-
-export default products;
