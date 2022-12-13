@@ -1,15 +1,18 @@
 .card {
   &__image {
     display: block;
-    width: 16.875rem;
-    height: 16.875rem;
+    width: 100%;
+    height: auto;
+    grid-area: img;
   }
   &__title {
     font-size: 1rem;
     font-weight: 700;
+    grid-area: hed;
   }
   &__description {
     font-size: 0.875rem;
+    grid-area: des;
   }
   &__info {
     display: flex;

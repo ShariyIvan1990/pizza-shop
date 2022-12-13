@@ -1,6 +1,6 @@
 import "./CardItem.scss";
 
-import PropTypes, { number } from "prop-types";
+import PropTypes from "prop-types";
 
 import { ButtonIcon } from "../ui/ButtonIcon";
 import { ReactComponent as ButtonAddIcon } from "./buttonAddIcon.svg";
@@ -17,7 +17,7 @@ const CardItem = ({
     <>
       <img
         className="card__image"
-        src={`/images/cards/${imageName}`}
+        src={`${process.env.PUBLIC_URL}/images/cards/${imageName}`}
         alt={title}
       />
       <h2 className="card__title">{title}</h2>
