@@ -2,13 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  max-width: 1400px;
+
+  max-width: 1300px;
+  gap: 0.4rem;
   margin: 0 auto;
 }
 
 .card {
-  width: 300px;
+  width: 320px;
   border: 1px solid #d58c51;
   padding: 2rem 1.25rem 1rem;
   &:hover {

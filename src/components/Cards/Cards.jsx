@@ -1,5 +1,8 @@
 import { CardItem } from "../CardItem/";
 import { products } from "../../services/dataList";
+import { ButtonIcon } from "../ui/ButtonIcon";
+
+import { ReactComponent as ButtonAddIcon } from "../Icons/buttonAddIcon.svg";
 
 import "./Cards.scss";
 
@@ -8,16 +11,16 @@ const Cards = () => {
   return (
     <div className="cards">
       {products.map((el) => (
-        <div className="card">
-          <CardItem
-            key={el.id}
-            imageName={el.img}
-            title={el.name}
-            description={el.description}
-            price={el.price}
-            weight={Number(el.price)}
-          />
-        </div>
+        <CardItem
+          className="card"
+          key={el.id}
+          imageName={el.img}
+          title={el.name}
+          description={el.description}
+          price={el.price}
+          weight={Number(el.price)}
+          bu
+        />
       ))}
     </div>
   );
