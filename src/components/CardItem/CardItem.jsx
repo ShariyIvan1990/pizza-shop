@@ -2,19 +2,17 @@ import "./CardItem.scss";
 
 import PropTypes from "prop-types";
 
-import { ButtonIcon } from "../ui/ButtonIcon";
-import { ReactComponent as ButtonAddIcon } from "./buttonAddIcon.svg";
-
 const CardItem = ({
   imageName,
   title,
   description,
   price,
   weight,
+  buttonToCart,
   ...props
 }) => {
   return (
-    <>
+    <div {...props}>
       <img
         className="card__image"
         src={`${process.env.PUBLIC_URL}/images/cards/${imageName}`}
@@ -24,10 +22,11 @@ const CardItem = ({
       {description ? <p className="card__description">{description}</p> : ""}
       <p className="card__info">
         <span className="card__info-price">{price} ₽</span>
-        {weight ? <span className="card__info-weight"> /{weight}</span> : ""}
+        {weight ? <span className="card__info-weight"> /{weight} г.</span> : ""}
       </p>
-      <ButtonIcon theme="white" icon={<ButtonAddIcon />} />
-    </>
+      {buttonToCart}
+      {/* <ButtonIcon theme={iconTheme} icon={icon} /> */}
+    </div>
   );
 };
 
