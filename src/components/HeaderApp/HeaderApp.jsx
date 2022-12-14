@@ -1,8 +1,8 @@
 import { ButtonIcon } from "../ui/ButtonIcon";
 import { ButtonText } from "../ui/ButtonText";
 
-import { ReactComponent as IconBack } from "./icon_back.svg";
-import { ReactComponent as IconCart } from "./icon_cart.svg";
+import { ReactComponent as IconBack } from "../Icons/icon_back.svg";
+import { ReactComponent as IconCart } from "../Icons/icon_cart.svg";
 
 import "./HeaderApp.scss";
 
