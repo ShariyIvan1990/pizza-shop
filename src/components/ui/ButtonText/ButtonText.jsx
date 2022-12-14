@@ -2,13 +2,9 @@ import "./ButtonText.scss";
 
 import PropTypes from "prop-types";
 
-const ButtonText = ({ text, theme, handleClick, ...props }) => {
+const ButtonText = ({ text, theme, ...props }) => {
   return (
-    <button
-      onClick={handleClick}
-      className={`button-text button-text_theme_${theme}`}
-      {...props}
-    >
+    <button className={`button-text button-text_theme_${theme}`} {...props}>
       {text}
     </button>
   );
