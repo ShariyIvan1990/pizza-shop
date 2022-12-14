@@ -1,0 +1,36 @@
+.cart {
+  &-main {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  &-card {
+    display: grid;
+    grid-template-columns: 7rem 1fr max-content max-content;
+    grid-template-areas: "img hed";
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    column-gap: 3rem;
+  }
+
+  &-footer {
+    padding: 30px 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(max-content, 824px) max-content;
+    position: sticky;
+    align-items: center;
+
+    bottom: 0;
+    border-top: 1px solid #d58c51;
+    &__order {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      &-summ {
+        font-size: 1.1rem;
+        color: #d58c51;
+      }
+    }
+  }
+}
