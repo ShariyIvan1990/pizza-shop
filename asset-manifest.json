@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pizza-shop/static/css/main.2a7aa756.css",
-    "main.js": "/pizza-shop/static/js/main.6f0a4b51.js",
+    "main.js": "/pizza-shop/static/js/main.75bcd2c8.js",
     "static/media/authBackground.jpg": "/pizza-shop/static/media/authBackground.c069a347fcda0243c6bd.jpg",
     "static/media/icon_cart.svg": "/pizza-shop/static/media/icon_cart.99238c9fca68bbc253e7e88c3a16e563.svg",
     "static/media/IconDelete.svg": "/pizza-shop/static/media/IconDelete.4555a1cb3ab106813ab94d133a31c2d0.svg",
@@ -9,10 +9,10 @@
     "index.html": "/pizza-shop/index.html",
     "static/media/buttonAddIcon.svg": "/pizza-shop/static/media/buttonAddIcon.03052b1ed90fb6f5a780b670b82f735a.svg",
     "main.2a7aa756.css.map": "/pizza-shop/static/css/main.2a7aa756.css.map",
-    "main.6f0a4b51.js.map": "/pizza-shop/static/js/main.6f0a4b51.js.map"
+    "main.75bcd2c8.js.map": "/pizza-shop/static/js/main.75bcd2c8.js.map"
   },
   "entrypoints": [
     "static/css/main.2a7aa756.css",
-    "static/js/main.6f0a4b51.js"
+    "static/js/main.75bcd2c8.js"
   ]
 }
