@@ -5,9 +5,18 @@ import { ButtonIcon } from "../ui/ButtonIcon";
 import { ReactComponent as IconAdd } from "../Icons/buttonAddIcon.svg";
 
 import "./Cards.scss";
+import { useDispatch } from "react-redux";
 
 export const Cards = () => {
-  console.log(process.env.PUBLIC_URL);
+  const dispatch = useDispatch();
+
+  const handleClick = (product) => {
+    dispatch({
+      type: "ADD_TO_CART",
+      payload: { product: product, price: product.price },
+    });
+  };
+
   return (
     <div className="cards">
       {products.map((el) => (
@@ -21,7 +30,15 @@ export const Cards = () => {
           description={el.description}
           price={el.price}
           weight={Number(el.price)}
-          buttonToCart={<ButtonIcon theme="white" icon={<IconAdd />} />}
+          buttonToCart={
+            <ButtonIcon
+              onClick={() => {
+                handleClick(el);
+              }}
+              theme="white"
+              icon={<IconAdd />}
+            />
+          }
         />
       ))}
     </div>

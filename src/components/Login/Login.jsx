@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 
 import { ButtonText } from "../ui/ButtonText";
@@ -8,7 +7,6 @@ import "./Login.scss";
 
 export const Login = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
 
   const location = useLocation();
   const pathname = location.state ? location.state.from : "/product";
@@ -31,7 +29,6 @@ export const Login = () => {
       event.stopPropagation();
       localStorage.setItem(login, password);
       sessionStorage.setItem("isAuth", true);
-      dispatch({ type: "LOGIN" });
       if (pathname) {
         navigate(pathname);
       } else {
@@ -43,9 +40,6 @@ export const Login = () => {
         setInputStatus({
           ...inputStatus,
           authWarning: "",
-        });
-        dispatch({
-          type: "LOGIN",
         });
         if (pathname) {
           navigate(pathname);

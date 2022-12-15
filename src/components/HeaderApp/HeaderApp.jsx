@@ -7,10 +7,11 @@ import { ReactComponent as IconBack } from "../Icons/icon_back.svg";
 import { ReactComponent as IconCart } from "../Icons/icon_cart.svg";
 
 import "./HeaderApp.scss";
+import { useSelector } from "react-redux";
 
 export const HeaderApp = ({ butonBack, title, cart, ...props }) => {
+  const { price, amount } = useSelector((state) => state.cart);
   const navigate = useNavigate();
-
   const handleClick = () => {
     navigate(-1);
   };
@@ -37,8 +38,8 @@ export const HeaderApp = ({ butonBack, title, cart, ...props }) => {
         {cart ? (
           <div className="header-cart">
             <div className="cart__info">
-              <p>{0} товара</p>
-              <p>на сумму {0} ₽</p>
+              <p>{amount} товара</p>
+              <p>на сумму {price} ₽</p>
             </div>
             <div className="cart__button">
               <Link to="/cart">
