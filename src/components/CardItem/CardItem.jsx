@@ -1,8 +1,11 @@
-import "./CardItem.scss";
-
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
-const CardItem = ({
+import "./CardItem.scss";
+
+export const CardItem = ({
+  id,
+  link,
   imageName,
   title,
   description,
@@ -13,12 +16,29 @@ const CardItem = ({
 }) => {
   return (
     <div {...props}>
-      <img
-        className="card__image"
-        src={`${process.env.PUBLIC_URL}/images/cards/${imageName}`}
-        alt={title}
-      />
-      <h2 className="card__title">{title}</h2>
+      {link ? (
+        <>
+          <Link className="card__image" to={"/product/" + id}>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/cards/${imageName}`}
+              alt={title}
+            />
+          </Link>
+          <Link className="card__title" to={"/product/" + id}>
+            <h2 className="card__title">{title}</h2>
+          </Link>
+        </>
+      ) : (
+        <>
+          <img
+            className="card__image"
+            src={`${process.env.PUBLIC_URL}/images/cards/${imageName}`}
+            alt={title}
+          />
+          <h2 className="card__title">{title}</h2>
+        </>
+      )}
+
       {description ? <p className="card__description">{description}</p> : ""}
       <p className="card__info">
         <span className="card__info-price">{price} ₽</span>
@@ -37,5 +57,3 @@ CardItem.propTypes = {
   price: PropTypes.number,
   weight: PropTypes.number,
 };
-
-export { CardItem };

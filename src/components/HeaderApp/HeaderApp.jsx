@@ -1,3 +1,5 @@
+import { useNavigate, Link } from "react-router-dom";
+
 import { ButtonIcon } from "../ui/ButtonIcon";
 import { ButtonText } from "../ui/ButtonText";
 
@@ -7,10 +9,28 @@ import { ReactComponent as IconCart } from "../Icons/icon_cart.svg";
 import "./HeaderApp.scss";
 
 export const HeaderApp = ({ butonBack, title, cart, ...props }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(-1);
+  };
+
+  const handleClickLogout = () => {
+    sessionStorage.removeItem("isAuth");
+
+    navigate("/", { replace: true });
+  };
+
   return (
     <header className="header">
       <div className="header-wrap">
-        {butonBack ? <ButtonIcon icon={<IconBack />} theme="orange" /> : null}
+        {butonBack ? (
+          <ButtonIcon
+            onClick={handleClick}
+            icon={<IconBack />}
+            theme="orange"
+          />
+        ) : null}
         {title ? <h2 className="header__title">{title}</h2> : null}
       </div>
       <div className="header-wrap">
@@ -21,13 +41,17 @@ export const HeaderApp = ({ butonBack, title, cart, ...props }) => {
               <p>на сумму {0} ₽</p>
             </div>
             <div className="cart__button">
-              <a href="/cart">
+              <Link to="/cart">
                 <IconCart />
-              </a>
+              </Link>
             </div>
           </div>
         ) : null}
-        <ButtonText theme="transparent" text="Выйти" />
+        <ButtonText
+          onClick={handleClickLogout}
+          theme="transparent"
+          text="Выйти"
+        />
       </div>
     </header>
   );

@@ -1,0 +1,108 @@
+.section-authentication {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../public/images/authBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authentication-form {
+  background-color: #fff;
+  padding: 10px 20px 35px 20px;
+  color: #161516;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form__link {
+  color: #d58c51;
+  align-self: flex-end;
+  font-size: 11px;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+}
+
+.form__header {
+  font-size: 31px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__input-text {
+  padding: 10px 20px;
+  width: 26.25rem;
+  font-size: 16px;
+  border-radius: 61px;
+  border: 1px solid #d58c51;
+}
+
+.form-checkbox__label {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.form-checkbox__input {
+  appearance: none;
+}
+
+.form-checkbox__box {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #d58c51;
+  border-radius: 50%;
+  position: relative;
+}
+
+.form-checkbox__input:checked + .form-checkbox__box::after {
+  content: "✓";
+  font-size: 25px;
+  color: #301411;
+  top: -12px;
+  left: 2px;
+  display: block;
+  position: absolute;
+}
+
+.form-checkbox__label-text {
+  font-size: 11px;
+  color: #301411;
+  padding-left: 10px;
+}
+
+.form__button {
+  align-self: center;
+}
+
+.form-button__label {
+  padding-top: 15px;
+  align-self: center;
+}
+
+.form__label-input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.input__warning-text {
+  position: absolute;
+  left: 17px;
+  bottom: -12px;
+  color: #ff0b0b;
+  font-size: 0.6rem;
+}
+
+.input__warning-text_auth {
+  width: 100%;
+  left: 0;
+  top: -15px;
+  text-align: center;
+}

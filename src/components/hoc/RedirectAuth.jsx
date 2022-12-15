@@ -1,12 +1,15 @@
-import { useLocation, Navigate } from "react-router-dom";
-const isAuth = false;
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const RedirectAuth = ({ children }) => {
-  const location = useLocation();
-  console.log(location.state);
-  if (!isAuth) {
-    return <Navigate to="/" state={{ from: location.pathname }} />;
-  } else {
-    return children;
-  }
+  const navigate = useNavigate();
+  const pathname = useLocation().pathname;
+  useEffect(() => {
+    console.log("is auth: ", sessionStorage.getItem("isAuth"));
+    if (!sessionStorage.getItem("isAuth")) {
+      navigate("/", { state: { from: pathname } });
+    }
+  }, [navigate, pathname]);
+
+  return children;
 };

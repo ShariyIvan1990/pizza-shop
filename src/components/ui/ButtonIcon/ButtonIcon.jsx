@@ -1,8 +1,8 @@
-import "./ButtonIcon.scss";
-
 import PropTypes from "prop-types";
 
-const ButtonIcon = ({ icon, theme, ...props }) => {
+import "./ButtonIcon.scss";
+
+export const ButtonIcon = ({ icon, theme, ...props }) => {
   return (
     <button className={`button-icon button-icon_theme_${theme}`} {...props}>
       {icon}
@@ -14,5 +14,3 @@ ButtonIcon.propTypes = {
   icon: PropTypes.element,
   theme: PropTypes.oneOf(["white", "orange"]),
 };
-
-export { ButtonIcon };
