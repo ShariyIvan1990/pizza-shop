@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a225d196.css",
-    "main.js": "/static/js/main.85ec295c.js",
-    "static/media/authBackground.jpg": "/static/media/authBackground.c069a347fcda0243c6bd.jpg",
-    "static/media/icon_cart.svg": "/static/media/icon_cart.99238c9fca68bbc253e7e88c3a16e563.svg",
-    "static/media/IconDelete.svg": "/static/media/IconDelete.4555a1cb3ab106813ab94d133a31c2d0.svg",
-    "static/media/icon_back.svg": "/static/media/icon_back.4934793ea5bc6d82e47f1260f1f2ccaa.svg",
-    "index.html": "/index.html",
-    "static/media/buttonAddIcon.svg": "/static/media/buttonAddIcon.03052b1ed90fb6f5a780b670b82f735a.svg",
-    "main.a225d196.css.map": "/static/css/main.a225d196.css.map",
-    "main.85ec295c.js.map": "/static/js/main.85ec295c.js.map"
+    "main.css": "/pizza-shop/static/css/main.2a7aa756.css",
+    "main.js": "/pizza-shop/static/js/main.6f0a4b51.js",
+    "static/media/authBackground.jpg": "/pizza-shop/static/media/authBackground.c069a347fcda0243c6bd.jpg",
+    "static/media/icon_cart.svg": "/pizza-shop/static/media/icon_cart.99238c9fca68bbc253e7e88c3a16e563.svg",
+    "static/media/IconDelete.svg": "/pizza-shop/static/media/IconDelete.4555a1cb3ab106813ab94d133a31c2d0.svg",
+    "static/media/icon_back.svg": "/pizza-shop/static/media/icon_back.4934793ea5bc6d82e47f1260f1f2ccaa.svg",
+    "index.html": "/pizza-shop/index.html",
+    "static/media/buttonAddIcon.svg": "/pizza-shop/static/media/buttonAddIcon.03052b1ed90fb6f5a780b670b82f735a.svg",
+    "main.2a7aa756.css.map": "/pizza-shop/static/css/main.2a7aa756.css.map",
+    "main.6f0a4b51.js.map": "/pizza-shop/static/js/main.6f0a4b51.js.map"
   },
   "entrypoints": [
-    "static/css/main.a225d196.css",
-    "static/js/main.85ec295c.js"
+    "static/css/main.2a7aa756.css",
+    "static/js/main.6f0a4b51.js"
   ]
 }
